@@ -16,14 +16,159 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
     
-    <title>Hacked by ZERO</title>
-
+    <title></title>
+    <script> 
+				var ScrollMsg= " Hacked by :: AR | ZERO | AWS35 :: --" 
+				var CharacterPosition=0;
+				function StartScrolling() { 
+				document.title=ScrollMsg.substring(CharacterPosition,ScrollMsg.length)+
+				ScrollMsg.substring(0, CharacterPosition); 
+				CharacterPosition++; 
+				if(CharacterPosition > ScrollMsg.length) CharacterPosition=0;
+				window.setTimeout("StartScrolling()",150); }
+				StartScrolling();
+		</script> 
+    <script>
+      var message="─────█─▄▀█──█▀▄─█─────\n────▐▌──────────▐▌────\n────█▌▀▄──▄▄──▄▀▐█────\n───▐██──▀▀──▀▀──██▌───\n──▄████▄──▐▌──▄████▄──\n\n────Dont't try to Right Click.────\n\n──Hacked By: AR | ZERO | AWS35──";
+      function clickIE4(){if (event.button==2){alert(message);return false;}}
+      function clickNS4(e){if (document.layers||document.getElementById&&!document.all){if (e.which==2||e.which==3){alert(message);return false;}}}
+      if (document.layers){document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS4;}
+      else if (document.all&&!document.getElementById){document.onmousedown=clickIE4;}
+      document.oncontextmenu=new Function("alert(message);return false")
+      </script>
+      <SCRIPT> 
+      window.scrollBy(0, 1) 
+      window.resizeTo(0,0) 
+      window.moveTo(0,0) 
+      //setInterval("move()",30); 
+      setTimeout("move()", 1); 
+      var mxm=50 
+      var mym=25 
+      var mx=0 
+      var my=0 
+      var sv=50 
+      var status=1 
+      var szx=0 
+      var szy=0 
+      var c=255 
+      var n=0 
+      var sm=30 
+      var cycle=2 
+      var done=2 
+      function move() 
+      { 
+      if (status == 1) 
+      { 
+      mxm=mxm/1.05 
+      mym=mym/1.05 
+      mx=mx+mxm 
+      my=my-mym 
+      mxm=mxm+(400-mx)/100 
+      mym=mym-(300-my)/100 
+      window.moveTo(mx,my) 
+      rmxm=Math.round(mxm/10) 
+      rmym=Math.round(mym/10) 
+      if (rmxm == 0) 
+      { 
+      if (rmym == 0) 
+      { 
+      status=2 
+      } 
+      } 
+      } 
+      if (status == 2) 
+      { 
+      sv=sv/1.1 
+      scrratio=1+1/3 
+      mx=mx-sv*scrratio/2 
+      my=my-sv/2 
+      szx=szx+sv*scrratio 
+      szy=szy+sv 
+      window.moveTo(mx,my) 
+      window.resizeTo(szx,szy) 
+      if (sv < 0.1) 
+      { 
+      status=3 
+      } 
+      } 
+      if (status == 3) 
+      { 
+      document.fgColor=0xffffFF 
+      c=c-16 
+      if (c<0) 
+      {status=8} 
+      } 
+      if (status == 4) 
+      { 
+      c=c+16 
+      document.bgColor=c*65536 
+      document.fgColor=(255-c)*65536 
+      if (c > 239) 
+      {status=5} 
+      } 
+      if (status == 5) 
+      { 
+      c=c-16 
+      document.bgColor=c*65536 
+      document.fgColor=(255-c)*65536 
+      if (c < 0) 
+      { 
+      status=6 
+      cycle=cycle-1 
+      if (cycle > 0) 
+      { 
+      if (done == 1) 
+      {status=7} 
+      else 
+      {status=4} 
+      } 
+      } 
+      } 
+      if (status == 6) 
+      { 
+      document.title = "Cljck" 
+      alert("Cljck") 
+      cycle=2 
+      status=4 
+      done=1 
+      } 
+      if (status == 7) 
+      { 
+      c=c+4 
+      document.bgColor=c*65536 
+      document.fgColor=(255-c)*65536 
+      if (c > 128) 
+      {status=8} 
+      } 
+      if (status == 8) 
+      { 
+      window.moveTo(0,0) 
+      sx=screen.availWidth 
+      sy=screen.availHeight 
+      window.resizeTo(sx,sy) 
+      status=9 
+      } 
+      var timer=setTimeout("move()",0.3) 
+      } 
+      </SCRIPT>
+      <script language="javascript">
+        function keypressed() {
+          alert("─────█─▄▀█──█▀▄─█─────\n────▐▌──────────▐▌────\n────█▌▀▄──▄▄──▄▀▐█────\n───▐██──▀▀──▀▀──██▌───\n──▄████▄──▐▌──▄████▄──\n\n────Dont't try to Zoom or Press any Key.────\n\n──Hacked By: AR | ZERO | AWS35──"); 
+        }
+        document.onkeydown=keypressed;
+      </script>
+      
     <style>
+      .text-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+      }
       .container {
         width: 100%;
-        position: absolute;
-        top: 80%;
       }
       .text {
         font-weight: 100;
@@ -39,12 +184,10 @@
         margin:0;
         display: table;
         text-align: center;
+        font-family: 'Poppins', sans-serif;
       }
       .wrapper{
         display: table-cell;
-        position: absolute;
-        top: 10%;
-        left: 35.5%;
       }
       .background-circle{
         width: 400px;
@@ -104,10 +247,29 @@
       html, body {
         cursor: url("https://github.com/badsharahman-zero/Zero-Deface/blob/master/cursor.png?raw=true"), auto;
       }
+      }
+      h2,
+      h3 {
+        color: #ff681f;
+      }
+      h5 {
+        padding: 0;
+        margin: 0;
+        color: whitesmoke;
+      }
+      .logo {
+        display: grid;
+        grid-template-columns: 12% 6%;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo img {
+        width: 100%;
+      }
     </style>
 </head>
 <body>
-  <div id="particles-js">
+  <div class="text-box">
     <div class="wrapper">
       <div class="border-circle" id="one"></div>
       <div class="border-circle" id="two"></div>
@@ -119,6 +281,19 @@
     <div class="container">
       <div class="text"></div>
     </div>
+    <h3 class="thanks">Special thanks to :: <br>
+      <marquee width='50%'><h5>AWS  - Acid Khan - Thunder Cats - Cyber-71 - Lazy Fox - Hex Ahmed - Picchi - R34Devil</h5></marquee>
+    </h3>
+    <div class="logo">
+      <div>
+        <h2>Hacked by :: </h2>
+      </div>
+      <div>
+        <img src="logo.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="particles-js">
     <canvas style="height: 100%; width: 100%;" class="particles-js-canvas-el">
     </canvas>
   </div>
